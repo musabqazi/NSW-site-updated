@@ -102,10 +102,14 @@
 
     /* Actions */
     .prod-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;}
-    .ext-links{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap;}
-    .ext-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-ui);font-size:10.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted2);text-decoration:none;padding:9px 16px;border:1px solid var(--border-sub);transition:all .2s;}
-    .ext-link:hover{border-color:var(--orange);color:var(--orange);}
-    .ext-link svg{flex-shrink:0;}
+    .platform-links{display:flex;flex-direction:column;gap:10px;margin-top:18px;max-width:280px;}
+    .platform-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-ui);font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#fff;padding:11px 20px;border-radius:2px;box-shadow:0 1px 0 rgba(255,255,255,.12) inset,0 1px 3px rgba(0,0,0,.4);transition:all .2s;}
+    .platform-btn svg{flex-shrink:0;}
+    .platform-btn-steam{background:linear-gradient(to right,#06BFFF 0%,#2D73BD 60%);}
+    .platform-btn-steam:hover{background:linear-gradient(to right,#1A9FFF 0%,#3D8FD6 60%);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 0 16px rgba(6,191,255,.4);}
+    .platform-btn-modio{background:linear-gradient(to right,#FF7B1C 0%,#D45A0F 60%);}
+    .platform-btn-modio:hover{background:linear-gradient(to right,#FF9540 0%,#E5710D 60%);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 0 16px rgba(255,123,28,.45);}
+    .platform-btn.is-disabled{opacity:.45;pointer-events:none;cursor:not-allowed;}
 
     /* DESCRIPTION */
     .prod-desc-section{padding:80px 0;background:var(--surface);}
@@ -261,15 +265,15 @@
           </button>
         </div>
 
-        <!-- External Links -->
-        <div class="ext-links">
-          <a href="#" class="ext-link" target="_blank">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><circle cx="6.5" cy="6.5" r="5.5" stroke="currentColor" stroke-width="1.2"/><path d="M4 6.5h5M9 6.5 6.5 4M9 6.5 6.5 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Steam Workshop
+        <!-- Platform Links -->
+        <div class="platform-links">
+          <a href="#" id="steamLink" class="platform-btn platform-btn-steam" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+            View on Steam
           </a>
-          <a href="#" class="ext-link" target="_blank">
-            <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="1" y="1" width="11" height="11" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M4 6.5h5M9 6.5 6.5 4M9 6.5 6.5 9" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Mod.io
+          <a href="#" id="modioLink" class="platform-btn platform-btn-modio" target="_blank" rel="noopener">
+            <svg width="20" height="16" viewBox="0 0 30 24" fill="currentColor" aria-hidden="true"><path d="M2 4v16h4V11l3 6h2l3-6v9h4V4h-5l-3 7-3-7H2z"/><circle cx="25" cy="20" r="2.5"/></svg>
+            View on mod.io
           </a>
         </div>
       </div>
@@ -441,6 +445,25 @@
       img.src = p.image;
       img.alt = p.name;
       img.style.display = 'block';
+    }
+
+    var steamLink = document.getElementById('steamLink');
+    if (steamLink) {
+      if (p.steam) {
+        steamLink.href = p.steam;
+      } else {
+        steamLink.classList.add('is-disabled');
+        steamLink.removeAttribute('href');
+      }
+    }
+    var modioLink = document.getElementById('modioLink');
+    if (modioLink) {
+      if (p.modio) {
+        modioLink.href = p.modio;
+      } else {
+        modioLink.classList.add('is-disabled');
+        modioLink.removeAttribute('href');
+      }
     }
 
     function syncCartButton() {

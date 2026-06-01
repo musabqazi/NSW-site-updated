@@ -5,7 +5,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Fighter',
     role: 'Offensive',
-    desc: 'The ultimate interplanetary heavy fighter for frontier colony militias. Industrial-grade construction with advanced propulsion and heavy armor for autonomous deep-space operations.'
+    desc: 'The ultimate interplanetary heavy fighter for frontier colony militias. Industrial-grade construction with advanced propulsion and heavy armor for autonomous deep-space operations.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3615150538',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-archrange-3807-m1#description'
   },
   'assault-archrange-3807-m1': {
     name: 'Assault Archrange-3807 M1',
@@ -13,7 +15,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Fighter',
     role: 'Offensive',
-    desc: 'A formidable evolution of the M1 heavy fighter. Four Assault Cannon turrets extend engagement range to challenge capital vessels despite its compact frame.'
+    desc: 'A formidable evolution of the M1 heavy fighter. Four Assault Cannon turrets extend engagement range to challenge capital vessels despite its compact frame.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3704141367',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-assault-archrange-3807-m1#description'
   },
   'armored-heavy-tug-m1': {
     name: 'Armored Heavy Tug M1',
@@ -21,7 +25,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Support',
     role: 'Utility',
-    desc: 'A battle-hardened tug turned warship. Thick armor plating and twin cannons — top and bottom — make this scrappy vessel a proven combat survivor.'
+    desc: 'A battle-hardened tug turned warship. Thick armor plating and twin cannons — top and bottom — make this scrappy vessel a proven combat survivor.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720207947',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-armored-heavy-tug-m1#description'
   },
   'blade-fighter-m3': {
     name: 'Blade Fighter M3',
@@ -29,7 +35,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Fighter',
     role: 'Offensive',
-    desc: 'A revival of a classic spacefighter blueprint. Modular architecture with gunpods, autocannons, and dual rocket launchers — affordable, versatile, frontier-ready.'
+    desc: 'A revival of a classic spacefighter blueprint. Modular architecture with gunpods, autocannons, and dual rocket launchers — affordable, versatile, frontier-ready.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3303052535',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-blade-fighter-m3#description'
   },
   'blade-bomber-m3': {
     name: 'Blade Bomber M3',
@@ -37,7 +45,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Bomber',
     role: 'Offensive',
-    desc: 'Precision strike variant of the Blade Fighter M3. Six GI3W Guided Missiles replace wing gunpods for devastating long-range offensive capability.'
+    desc: 'Precision strike variant of the Blade Fighter M3. Six GI3W Guided Missiles replace wing gunpods for devastating long-range offensive capability.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720211015',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-blade-bomber-m3#description'
   },
   'destroyer-m1': {
     name: 'Destroyer M1',
@@ -45,7 +55,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Capital',
     role: 'Defensive',
-    desc: "NSW's inaugural destroyer-class vessel. Built to neutralize raider and pirate threats to colonial territories — capable of solo deployment or fleet integration."
+    desc: "NSW's inaugural destroyer-class vessel. Built to neutralize raider and pirate threats to colonial territories — capable of solo deployment or fleet integration.",
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720212517',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-destroyer-m1#description'
   },
   'glaive-patrol-m1': {
     name: 'Glaive Patrol M1',
@@ -53,7 +65,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Patrol',
     role: 'Defensive',
-    desc: 'The ultimate solution for protecting remote colonies. Expertly crafted for military frontier defense — precision, efficiency, and reliability on patrol.'
+    desc: 'The ultimate solution for protecting remote colonies. Expertly crafted for military frontier defense — precision, efficiency, and reliability on patrol.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720213785',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-glave-patrol-m1#description'
   },
   'light-carrier-m1': {
     name: 'Light Carrier M1',
@@ -61,7 +75,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Capital',
     role: 'Utility',
-    desc: 'Versatile frontier carrier for mining, salvaging, and transporting small craft. Lightweight design for unparalleled maneuverability across contested sectors.'
+    desc: 'Versatile frontier carrier for mining, salvaging, and transporting small craft. Lightweight design for unparalleled maneuverability across contested sectors.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720214895',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-light-carrier-m1#description'
   },
   'or3-corvette-m1': {
     name: 'Or3 Corvette M1',
@@ -69,7 +85,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Patrol',
     role: 'Offensive',
-    desc: 'Originally a light freighter, expertly converted for military use. Speed, agility, and durability in one package — built for frontier patrol and strategic engagement.'
+    desc: 'Originally a light freighter, expertly converted for military use. Speed, agility, and durability in one package — built for frontier patrol and strategic engagement.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720215705',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-or3-corvette-m1#description'
   },
   'orion-missile-frigate-v1': {
     name: 'Orion Missile Frigate V1',
@@ -77,7 +95,9 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Capital',
     role: 'Offensive',
-    desc: 'Sleek design meets overwhelming firepower. Military-grade missiles make this frigate the ultimate deterrent against any enemy threatening the frontier.'
+    desc: 'Sleek design meets overwhelming firepower. Military-grade missiles make this frigate the ultimate deterrent against any enemy threatening the frontier.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720216392',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-orion-missle-frigate-v1#description'
   },
   'sc-m2': {
     name: 'SC-M2',
@@ -85,6 +105,8 @@ window.NSW_PRODUCTS = {
     category: 'Military',
     class: 'Fighter',
     role: 'Offensive',
-    desc: 'Engineered for interstellar warfare. A versatile light fighter with sleek design and high-performance capabilities — built to dominate militarily challenging frontier environments.'
+    desc: 'Engineered for interstellar warfare. A versatile light fighter with sleek design and high-performance capabilities — built to dominate militarily challenging frontier environments.',
+    steam: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3720217110',
+    modio: 'https://mod.io/g/spaceengineers/m/nul-sc-m2#description'
   }
 };
